@@ -23,7 +23,7 @@ public class Application01 {
         System.out.println("name = "  + name);
         System.out.println("age = "  + age);
         System.out.println("gender = "  + gender);
-                System.out.print("hobby  : "  );                //for문 출력해야하니깐 +없이 바로~
+                System.out.print("hobby  : "  );                // for문 출력해야하니깐 +없이 바로~
 
         for(int i = 0; i < hobby.length; i++) {
 

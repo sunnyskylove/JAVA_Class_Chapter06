@@ -5,7 +5,7 @@ public class Monster {
     String name;   // 몬스터 이름
     int hp;        // 몬스터 체력
 
-    public  void setHp(int hp){
+    public  void setHp(int hp){                     //1 번)_내부
 
         if(hp > 0){            //int 체력으로 했으니깐 0이하일때만 처리되게 만들기
 
