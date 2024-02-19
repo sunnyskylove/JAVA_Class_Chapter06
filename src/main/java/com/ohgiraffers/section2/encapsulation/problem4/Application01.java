@@ -16,7 +16,7 @@ public class Application01 {
         * */
 
         monster1.setName("미이라");                    // 2) 다른클래스(Monster)에서 만들 객체 만들기
-        monster1.setHp(-200);           // 오류남!!!
+        monster1.setHp(-200);          // 오류남!!!
         monster1.setAge(100);
 
         System.out.println(monster1.getInfo());       // 4) 출력본, 다시 다른클래스(Monster)에서 [전체]출력만들고, 실행!완료!
