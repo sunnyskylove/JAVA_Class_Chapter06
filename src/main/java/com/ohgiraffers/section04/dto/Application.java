@@ -16,11 +16,11 @@ public class Application {
 
         /* 목차. 1. 생성자를 이용한 초기화 */
         UserDTO user1 = new UserDTO("ohgiraffers", "ohgiraffers", "ohgiraffers",  new java.util.Date());
-        //setter를 만들어놔서 ""안만 입력해도 나옴(Intellij)  // 1) 생성자를 이용한 초기화
+        //setter를 만들어놔서 ""안만 입력해도 나옴(Intellij)     // 1) 생성자를 이용한 초기화
         System.out.println(user1.getInfo());
 
         /* 목차. 2. 기본 생성자와 설정자를 이용한 초기화 */
-        UserDTO user2 = new UserDTO();                  // 2) 설정자를 이용한 초기화
+        UserDTO user2 = new UserDTO();                      // 2) 설정자를 이용한 초기화
         user2.setId("ohgiraffers");
         user2.setPwd("ohgiraffers");
         user2.setName("ohgiraffers");
