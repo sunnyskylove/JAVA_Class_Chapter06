@@ -1,4 +1,4 @@
-package com.ohgiraffers.section2.encapsulation.problem2;
+package com.ohgiraffers.section02.encapsulation.problem2;
 
 public class Application01 {
     public static void main(String[] args) {

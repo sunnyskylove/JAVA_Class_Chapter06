@@ -33,7 +33,7 @@ public class Product {
 //        name = "아이뽕";
 //        price = 2000;
         brand = "헬지";
-        System.out.println("정적 초기화 블럭 동작함...");           // 공부 다시하기!!!(호출흐름/덮여쓰기됨?)
+        System.out.println("정적 초기화 블럭 동작함...");
     }
 
 
