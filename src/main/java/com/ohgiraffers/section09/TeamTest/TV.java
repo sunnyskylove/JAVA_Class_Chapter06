@@ -11,7 +11,7 @@ public class TV {
     public TV(){}
 
 
-    public TV(String brand, int year, int inch) {         // 간접적으로 클래스 내부에서 초기화 값을 넣어주기 위해 작성
+    public TV(String brand, int year, int inch) {     // 간접적으로 클래스 내부에서 초기화 값을 넣어주기 위해 작성
 
             this.brand = brand;
             this.year = year;

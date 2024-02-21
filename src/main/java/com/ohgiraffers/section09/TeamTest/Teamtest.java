@@ -13,10 +13,6 @@ public class Teamtest{
             myTV.show();                //매개생성자일 경우 1개 필요
             System.out.println(myTV.getBrand());
 
-
-
-
-
         }
 
     }
