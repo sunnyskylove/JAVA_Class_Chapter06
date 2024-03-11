@@ -1,6 +1,6 @@
 package com.ohgiraffers.section07.kindsofvariable;
 
-public class KindsOfVariable {  // 클래스 영역의 시작
+public class KindsOfVariable {                      // 클래스 영역의 시작
 
     /* 수업목표. 다양한 변수들을 이해하고 사용할 수 있다. */
     /* 필기.
@@ -9,11 +9,11 @@ public class KindsOfVariable {  // 클래스 영역의 시작
     * */
 
 
-    /* 필기. non-static field를 인스턴스 변수 라고 한다. (인스턴스 생성 시점에 사용 가능한 변수)*/
+    /* 필기. non-static field 를 인스턴스 변수 라고 한다. (인스턴스 생성 시점에 사용 가능한 변수)*/
     private int globalNum;
 
 
-    /* 필기. static field를 정적필드(클래스변수) 라고 한다. (정적(클래스) 영역에 생성되는 변수라는 의미)*/
+    /* 필기. static field 를 정적필드(클래스변수) 라고 한다. (정적(클래스) 영역에 생성되는 변수라는 의미)*/
     private static int staticNum;
 
     public void testMethod(int num){  // 메소드 영역의 시작

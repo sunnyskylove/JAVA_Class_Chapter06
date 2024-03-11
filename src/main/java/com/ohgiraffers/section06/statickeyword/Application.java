@@ -59,10 +59,5 @@ public class Application {
         /* 필기. 클래스명.메소드명 */
         StaticMethodTest.staticMethod();        // 중요!! 권장함!!
 
-
-
-
-
-
     }
 }
