@@ -13,7 +13,7 @@ public class KindsOfVariable {                      // 클래스 영역의 시�
     private int globalNum;
 
 
-    /* 필기. static field 를 정적필드(클래스변수) 라고 한다. (정적(클래스) 영역에 생성되는 변수라는 의미)*/
+    /* 필기. static field 를 정적필드(클래스변수) 라고 한다. (정적 클래스) 영역에 생성되는 변수라는 의미) */
     private static int staticNum;
 
     public void testMethod(int num){  // 메소드 영역의 시작
@@ -25,10 +25,10 @@ public class KindsOfVariable {                      // 클래스 영역의 시�
         *   지역변수와 매개변수 모두 메소드 호출시 stack 을 할당 받아 stack에 생성된다.
         * */
 
-        int localNum;           /// 재공부하기~!!!! 놓침..ㅠㅠㅠㅠ
+        int localNum;           // 재공부하기~!!!! 놓침..ㅠㅠㅠㅠ
 
         System.out.println(num);  // 매개변수는 호출 시 값이 넘어와서 변경되기 때문에 초기화가 필요 없다.
-//        System.out.println(localNum); // 지역변수는 선언 외에 다시 사용(호출)하기 위해서는 반드시 초기화가 되어야 한다.
+//        System.out.println(localNum); // * 지역변수는 선언 외에 다시 사용(호출)하기 위해서는 반드시 초기화가 되어야 한다.
         System.out.println(globalNum);  // 전역변수는 말 그래로 클래스 내부에서 다 사용할 수 있다.
         System.out.println(staticNum);  // 전역변수는 말 그래로 클래스 내부에서 다 사용할 수 있다.
 
@@ -36,8 +36,8 @@ public class KindsOfVariable {                      // 클래스 영역의 시�
 
     public void testMethod2(){
 
-        // 상위에 있는 박스와 같아서 (주석된 2건) 안됨
-//        System.out.println(localNum);   // 지역변수 해당 지역(블럭 내부)에서만 사용 가능하다.
+        // ▼ 상위에 있는 박스와 같아서 (주석된 2건) 안됨 ▼
+//        System.out.println(localNum);   // 지역변수는 해당 지역(블럭 내부)에서만 사용 가능하다.
 //        System.out.println(num);
         System.out.println(globalNum);      // 전역 변수는 다른 메소드 에서도 상관 없이 사용 가능하다.
         System.out.println(staticNum);
