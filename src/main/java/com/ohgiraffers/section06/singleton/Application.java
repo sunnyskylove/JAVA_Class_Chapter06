@@ -19,7 +19,7 @@ public class Application {
         * */
 
         /* 필기.
-        *   싱글톤 구현 방법
+        *   - 싱글톤 구현 방법
         *   1. 이른 초기화(Eager Initialization)
         *   2. 게이른 초기화(Lazy Initialization)
         * */
