@@ -32,11 +32,11 @@ public class MemberDTO {
     *   * 접근자(getter) 작성규칙 :
     *   필드의 값을 반환받는 목적의 메소드 집합을 의미한다.
     *   각 접근자는 하나의 필드에만 접근하도록 한다.
-    *   필드에 접근해서 기록된 값을 return을 이용하여 반환하며, 이 때 반환 타입은 값의 자료형과 일치.
+    *   필드에 접근해서 기록된 값을 return 을 이용하여 반환하며, 이 때 반환 타입은 값의 자료형과 일치.
     *   [표현식]
     *   public 반환형 get필드명() {
     *   return 반환값;
-    *   [작성예시]
+    *   - 작성예시 :
     *   public String getName(){
     *   return name;
     *    }
@@ -59,9 +59,9 @@ public class MemberDTO {
     public double getHeight() {return height;}
     public double getWeight() {return weight;}
 
-    /* 필기. boolean의 접근자는 get으로 시작하지 않고, is로 시작하는 것이 일반적으로 관례이다. */
+    /* 필기. boolean 의 접근자는 get 으로 시작하지 않고, is로 시작하는 것이 일반적으로 관례이다. */
     public boolean isActivated(){return isActivated;}
-    //car 클래스에 있는 "isOn"도 그렇고, boolean은 앞에 is를 붙여준다.
+    //car 클래스에 있는 "isOn"도 그렇고, boolean 은 앞에 is를 붙여준다.
 
 
 }

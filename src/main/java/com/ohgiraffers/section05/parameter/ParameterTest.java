@@ -24,7 +24,6 @@ public class ParameterTest {
 
         System.out.println();
 
-
         iarr[0] = 99;
         System.out.print("변경 후 배열의 값 출력 : ");
         for(int i = 0; i < iarr.length; i++){
@@ -49,7 +48,7 @@ public class ParameterTest {
         rectangle.calcArea();
         rectangle.calcRound();
 
-        rectangle.setWidth(100);            // 자동형변환(double로 가니깐~~)
+        rectangle.setWidth(100);            // 자동형변환(double 로 가니깐~~)
         rectangle.setHeight(100);
 
         System.out.println("변경 후 사각형의 넓이와 둘레=======================================");
@@ -58,7 +57,8 @@ public class ParameterTest {
 
     }
 
-    public void testVariableLengthArrayParameter(String name, String...hobby) {     // 몇개를 보낼지 몰라서 ...(가변인자)으로 표현
+    public void testVariableLengthArrayParameter(String name, String...hobby) {
+                                                // 몇개를 보낼지 몰라서 ...(가변인자) 으로 표현
 
         /* 필기.
         *   가변길이(...)의 배열은 몇 개가 매개변수로 전달 될 지 모르는 상황이기 때문에 이름과
@@ -77,6 +77,5 @@ public class ParameterTest {
         System.out.println();
 
     }
-
 
 }

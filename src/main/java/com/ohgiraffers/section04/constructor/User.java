@@ -8,13 +8,13 @@ public class User {
     private java.util.Date enrollDate;      // 다른 클래스, 날짜를 반환해줌
 
     /* 필기.
-    *   생상자의 작성 위치
+    *   - 생상자의 작성 위치
     *   문법상으로 클래스 내부에 작성하면 되지만,
     *   통상적으로 필드 선언부와 메소드 선언부 사이에 적는 것이 관례이다.
     * */
 
     /* 필기.
-    *   생성자의 사용 목적
+    *   - 생성자의 사용 목적
     *   1. 인스턴스 생성 시점에 수행할 명령이 있는 경우 사용한다.
     *   2. 매개변수 있는 생성자의 경우 매개변수로 전달받은 값으로 필드를 초기화하며
     *      인스턴스를 생성할 목적으로 주로 사용된다.
@@ -78,15 +78,12 @@ public class User {
         this(id,pwd,name);          // * 필기. 1. 에서 미리 작성한 필드를 초기화 하는 생성자로 매개변수로 받은 값(만들어놨기 때문에 재사용 할 수 있다.)을 전달
         this.enrollDate = enrollDate;
         System.out.println("User 클래스의 모든 필드를 초기화 하는 생성자 호출함...");  // 재사용해서 똑같은게 또 나옴, "User 클래스의 id, pwd, name 을 초기화 하는 생성자 호출함..."
-
     }
 
     public String getInfo(){
 
         return "User [id=" + this.id + ", pwd=" + this.pwd + ", name"+ this.name + ", enrollDate= " + this.enrollDate + "]";
-
     }
-
 }
 
 

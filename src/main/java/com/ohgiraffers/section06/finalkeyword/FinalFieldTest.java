@@ -7,9 +7,9 @@ public class FinalFieldTest {
     *   final
     *   : final 은 종단의 의미를 가지는 키워드이다.
     *    final 키워드를 사용할 수 있는 위치는 다양한 편이며 의미가 약간 다르지만, 결국 변경 불가의 의미.
-    *    1. 지역변수 : 초기화 이후에 값 변경 불가
-    *    2. 매개변수 : 호출 시 전달한 인자 변경 불가
-    *    3. 전역변수 : 인스턴스 생성 후 초기화 이후 값 변경 불가
+    *    1. *지역변수 : 초기화 이후에 값 변경 불가
+    *    2. *매개변수 : 호출 시 전달한 인자 변경 불가
+    *    3. *전역변수 : 인스턴스 생성 후 초기화 이후 값 변경 불가
     *    4. 클래스(static) 변수 : 프로그램 start 후 값 변경 불가
     *    5. non-static 메소드 : 메소드 재작성(overriding) 불가
     *    6. static 메소드 : 메소드 재작성(overriding) 불가
@@ -22,7 +22,7 @@ public class FinalFieldTest {
     *   final 은 변경 불가의 의미를 가진다.
     *   따라서 초기 인스턴스가 생성되고 나면 기본값 0이 필드에 들어가게 되는데,
     *   그 초기화 이후 값을 변경할 수 없기 때문에 선언하면서 바로 초기화(값 넣기)를 해 주어야 한다.
-    *   그렇지 않으면 compile error가 발생
+    *   그렇지 않으면 compile error 가 발생
     * */
 //    private final int nonstaticNum;       // 0으로 초기화 이후 변경 불가능
 
@@ -43,7 +43,8 @@ public class FinalFieldTest {
     *   static 에서도 자바에서 지정한 기본값이 들어가기 때문에
     *   final 키워드 사용 시 초기화를 하지 않으면 에러가 발생한다.
     * */
-//    private static final int STATIC_NUM;       // static도 기본값 들어가니깐~final 함께 쓸 수 없음, 값을 초기화를 해줘야함(밑 예시 참고!!)
+//    private static final int STATIC_NUM;
+// ## static 도 기본값 들어가니깐~ final 함께 쓸 수 없음, 값을 초기화를 해줘야함(밑 예시 참고!!)
 
     private static final int STATIC_NUM = 1;
 
@@ -62,7 +63,7 @@ public class FinalFieldTest {
 //    }
 
     /* 필기. 하지만 초기화블럭으로는 초기화 할 수 있다. */
-    static {                                        // static 과 있을때 초기화 하는 방법~!!
+    static {                                   // ## static 과 있을때 초기화 하는 방법~!!
         STATIC_DOUBLE = 0.5;
     }
 

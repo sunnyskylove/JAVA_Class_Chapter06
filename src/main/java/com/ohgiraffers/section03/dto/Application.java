@@ -19,7 +19,7 @@ public class Application {
         * */
 
 
-        MemberDTO member = new MemberDTO();                                 // set으로 작성
+        MemberDTO member = new MemberDTO();                                 // set 으로 작성
         member.setNumber(1);
         member.setName("홍길동");
         member.setAge(20);
